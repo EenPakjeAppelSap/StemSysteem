@@ -26,6 +26,10 @@ namespace Stemcomputer
             this.uPartijen = uPartijen;
         }
 
+        public uKandidaten()
+        {
+        }
+
         public string Voornaam;
         private string Kandidaatachternaam;
         private string Kandidaatnummer;
@@ -34,7 +38,8 @@ namespace Stemcomputer
         {
             set
             {
-         
+                Voornaam = value;
+                LabelKandidaatNaam.Text = Voornaam;
             }
             get
             {
@@ -47,7 +52,8 @@ namespace Stemcomputer
         {
             set
             {
-         
+                Kandidaatachternaam = value;
+                LabelKandidaatAchterNaam.Text = KandidaatAchterNaam;
             }
             get
             {
@@ -61,7 +67,8 @@ namespace Stemcomputer
         {
             set
             {
-         
+                Kandidaatnummer = value;
+                labelNummerKandidaat.Text = Kandidaatnummer;
             }
         }
 

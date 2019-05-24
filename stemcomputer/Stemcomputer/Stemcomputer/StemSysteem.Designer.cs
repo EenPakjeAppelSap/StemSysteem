@@ -75,7 +75,7 @@ namespace Stemcomputer
         #endregion
 
         public System.Windows.Forms.FlowLayoutPanel panelPartijen;
-        private System.Windows.Forms.CheckBox checkBoxAdmin;
+        public System.Windows.Forms.CheckBox checkBoxAdmin;
     }
 }
 

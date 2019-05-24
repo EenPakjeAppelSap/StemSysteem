@@ -49,7 +49,7 @@ namespace Stemcomputer
 
                 Img1 = byteArrayToImage(myImage);
                 proitem.afbeelding = Img1;
-                proitem.ProductNummer = Nummer;
+                proitem.KandidaatNummer = Nummer;
 
                 partijenlist.Add(proitem);
 

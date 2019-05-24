@@ -27,7 +27,7 @@ namespace Stemcomputer
         public List<uKandidaten> Kandidatenlist;
         public List<string> idKandidaten;
 
-        public string ProductNummer
+        public string KandidaatNummer
         {
             set
             {
@@ -51,6 +51,7 @@ namespace Stemcomputer
         private void ButtonPartij_Click_1(object sender, EventArgs e)
         {
             Database con = new Database();
+            _Form1.checkBoxAdmin.Enabled = false;
 
             if (_Form1.idPartijen.Contains(labelNummer.Text))
             {
@@ -74,12 +75,9 @@ namespace Stemcomputer
                     proitem.KandidaatNummer = NummerKandidaat;
 
                     Kandidatenlist.Add(proitem);
-
-
                 }
                 _Form1.panelPartijen.Controls.Clear();
                 _Form1.panelPartijen.Controls.AddRange(Kandidatenlist.ToArray());
-
             }
         }
     }

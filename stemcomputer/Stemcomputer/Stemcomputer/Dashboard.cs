@@ -18,11 +18,13 @@ namespace Stemcomputer
         {
             InitializeComponent();
             this.Size = new Size(420, 200);
+            AutoScrollMinSize = new Size(0, 1700);
         }
 
         public Dashboard(StemSysteem stemSysteem)
         {
             this.stemSysteem = stemSysteem;
         }
+
     }
 }
